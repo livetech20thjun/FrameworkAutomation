@@ -1,0 +1,88 @@
+
+
+********************************************
+Project Management Tool
+********************************************
+
+Maven 
+
+
+apache community 
+
+https://maven.apache.org/download.cgi
+
+
+Downloading Apache Maven 3.9.9
+
+apache-maven-3.9.9-bin.zip
+
+how to configure maven :
+
+MAVEN_HOME  D:\012Livetech\jars\apache-maven-3.9.9-bin\apache-maven-3.9.9
+M2_HOME  D:\012Livetech\jars\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin
+path D:\012Livetech\jars\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin
+
+how to check maven is installed and configure ?
+
+C:\Users\Riyaz>mvn -version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: D:\010LiveTech\jars\apache-maven-3.9.9-bin\apache-maven-3.9.9
+Java version: 11.0.24, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-11
+Default locale: en_IN, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+
+
+
+****************************************
+Maven Project 
+
+group id : common id used by all projects in an organization 
+
+
+com.citibank 
+
+Artifact id : is a specific project under group id 
+e.g FrameworkAutomation 
+
+
+src/main/java   ==> java stuf (for app developement)
+src/main/resources ==> non-java ( javascripts , css file  etc..)
+src/test/java   ==>java test cases (like junit test case etc ..)
+src/test/resources ==> non-java stuff ( excel files , json files , properties etc ..)
+
+
+target --> used by maven to store files related to project execution 
+
+pom.xml --> project object model .xml 
+
+https://mvnrepository.com/ 
+
+<dependencies>   </dependencies>
+
+
+*************************************
+How to read and write to excel files 
+*************************************
+
+using Apache POI libraries 
+
+org.apache.poi » poi
+
+org.apache.poi » poi-ooxml
+
+org.apache.poi » poi-scratchpad
+
+
+			.xls										.xlsx
+
+		HSSFWorkbook(C)			Workbook (I)  			XSSFWorkbook(C)
+								
+		HSSFShee(C)				Sheet (I)				XSSFSheet(C)
+								
+		HSSFRow(C)				Row (I)					XSSFRow(C)
+								
+		HSSFCell(C)				Cell (I) 				XSSFCell(C)
+		
+		
+								
+								
