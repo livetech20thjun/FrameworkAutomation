@@ -85,4 +85,71 @@ org.apache.poi » poi-scratchpad
 		
 		
 								
-								
+Microsoft Excel used the .xls file format until the 2007 version: 
+Excel 97, 2000, 2002, and 2003: Used the .xls file format, which is the Excel Binary File Format (BIFF8) 
+Excel 2007: Introduced the .xlsx file format, which is based on Office Open XML, and remained backwards-compatible with the .xls forma								
+
+
+
+FileInputStream  (java.io)
+
+
+FileInputStream(File)
+FileInputStream(FileDescriptor)
+FileInputStream(String) ==> this is prefered , here String is the location of file including extension 
+
+
+XSSFWorkbook(C) (org.apache.poi.xssf.usermodel)
+
+
+
+XSSFWorkbook(InputStream) ==> here InputStream is object of FileInputStream
+
+getSheet(String):XSSFSheet  ==> String is sheet name 
+
+XSSFSheet(C) :
+
+getLastRowNum():int ==> this will return an int , where counting starts from zero
+
+getRow(int):XSSFRow here int is index , index starts from zero 
+
+
+--------------------------------
+XSSFRow(c)
+
+getLastCellNum():short , this will return an int , where counting starts from one 
+getCell(int):XSSFCell , here int is index , index starts from zero 
+
+------------------------------------------------
+XSSFCell (c) :
+
+
+getCellType():CellType
+
+CellType is an enum simliar to interface which will have some constants 
+
+NUMERIC
+
+STRING
+
+BOOLEAN
+
+BLANK
+
+
+getStringCellValue():String
+
+getNumericCellValue():double
+
+getBooleanCellValue():boolean
+
+
+
+
+
+
+
+
+
+
+
