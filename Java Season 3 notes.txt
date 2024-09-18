@@ -145,11 +145,32 @@ getBooleanCellValue():boolean
 
 
 
+*************************************
+Excel Write
+**************************************
+
+
+Case1 : modifying an existing cell 
+
+Methods in XSSFCell
+
+
+case 2: creating a cell in existing row 
+
+case 3: creating a new row and cell in it 
 
 
 
+***********************************
+Properties File
+***********************************
 
+.properties
 
+this will store key and value both in form of string 
+
+browser=chrome
+implicitWait=30
 
 
 
