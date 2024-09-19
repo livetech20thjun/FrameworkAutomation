@@ -173,4 +173,39 @@ browser=chrome
 implicitWait=30
 
 
+**************************************
+HashMap (C)
+**************************************
+
+Map (I) - java.util
+
+Entry<K, V> (I)
+
+put(K, V):V
+
+size():int 
+
+entrySet():Set<Entry<K, V>>
+
+keySet():Set<K>
+
+values():Collection<V>
+
+containsKey(Object):boolean
+
+containsValue(Object):boolean
+
+get(Object):Value
+
+getKey():K
+getValue():V 
+
+------------------------------
+HashMap()
+HashMap(int)
+HashMap(int, float)
+HashMap(Map<? extends K, ? extends V>)
+
+
+putIfAbsent(K, V):V 
 
